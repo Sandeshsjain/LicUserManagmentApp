@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/main_container">
+        <ImageView
+            android:layout_margin="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/liclogo">
+        </ImageView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/viewAllbtn"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="View All">
+            </TextView>
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/totalclientTV"
+                android:layout_toLeftOf="@+id/totalClientCountTV"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Total Client :- ">
+            </TextView>
+            <TextView
+                android:layout_marginRight="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/totalClientCountTV"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/black"
+                android:text="dummy">
+            </TextView>
+
+        </RelativeLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewHome"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_weight="2"
+                        android:id="@+id/nameTV"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textColor="@color/black">
+
+                    </TextView>
+                    <EditText
+                        android:layout_weight="2"
+                        android:id="@+id/NameET"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_background">
+
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="2"
+                        android:id="@+id/MobileTV"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile no"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent">
+
+                    </TextView>
+                    <EditText
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="2"
+                        android:id="@+id/mobileET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/MobileTV"
+                        android:background="@drawable/edittext_background">
+
+                    </EditText>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="2"
+                        android:id="@+id/EmailTV"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent">
+
+                    </TextView>
+                    <EditText
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="2"
+                        android:id="@+id/emailET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/MobileTV"
+                        android:background="@drawable/edittext_background">
+
+                    </EditText>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="2"
+                        android:id="@+id/DOCTV"
+                        android:layout_height="wrap_content"
+                        android:text="Date of birth"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent">
+
+                    </TextView>
+                    <EditText
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="2"
+                        android:id="@+id/DOCET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/MobileTV"
+                        android:background="@drawable/edittext_background">
+
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="2"
+                        android:id="@+id/pptTV"
+                        android:layout_height="wrap_content"
+                        android:text="P/P/T"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent">
+
+                    </TextView>
+                    <EditText
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="2"
+                        android:id="@+id/pptET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/MobileTV"
+                        android:background="@drawable/edittext_background">
+
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="2"
+                        android:id="@+id/BranchTV"
+                        android:layout_height="wrap_content"
+                        android:text="Branch Name"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent">
+
+                    </TextView>
+                    <EditText
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="2"
+                        android:id="@+id/branchET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/MobileTV"
+                        android:background="@drawable/edittext_background">
+
+                    </EditText>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="2"
+                        android:id="@+id/finalamountTV"
+                        android:layout_height="wrap_content"
+                        android:text="Final Amount"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent">
+
+                    </TextView>
+                    <EditText
+                        android:layout_weight="2"
+                        android:id="@+id/finalamountET"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/MobileTV"
+                        android:background="@drawable/edittext_background">
+
+                    </EditText>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="2"
+                        android:id="@+id/premiumTV"
+                        android:layout_height="wrap_content"
+                        android:text="Premium Amount"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent">
+
+                    </TextView>
+                    <EditText
+                        android:layout_weight="2"
+                        android:id="@+id/premiumET"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/premiumTV"
+                        android:background="@drawable/edittext_background">
+
+                    </EditText>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="2"
+                        android:id="@+id/policyTV"
+                        android:layout_height="wrap_content"
+                        android:text="Policy Number"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent">
+
+                    </TextView>
+                    <EditText
+                        android:layout_weight="2"
+                        android:id="@+id/policyET"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/premiumTV"
+                        android:background="@drawable/edittext_background">
+
+                    </EditText>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/buttonSubmit"
+            android:text="Submit"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:background="@drawable/submitbuttondesign"
+            android:layout_height="wrap_content">
+
+        </Button>
+    </LinearLayout>
+
+</ScrollView>

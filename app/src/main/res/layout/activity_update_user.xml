@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UpdateUserActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:text="Update user">
+    </TextView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewHome"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_weight="2"
+                    android:id="@+id/nameTV"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@color/black">
+
+                </TextView>
+                <EditText
+                    android:layout_weight="2"
+                    android:id="@+id/NameETUP"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_background">
+
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="2"
+                    android:id="@+id/MobileTV"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile no"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent">
+
+                </TextView>
+                <EditText
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="2"
+                    android:id="@+id/mobileETUP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/MobileTV"
+                    android:background="@drawable/edittext_background">
+
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="2"
+                    android:id="@+id/EmailTV"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent">
+
+                </TextView>
+                <EditText
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="2"
+                    android:id="@+id/emailETUP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/MobileTV"
+                    android:background="@drawable/edittext_background">
+
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="2"
+                    android:id="@+id/DOCTV"
+                    android:layout_height="wrap_content"
+                    android:text="Date of birth"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent">
+
+                </TextView>
+                <EditText
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="2"
+                    android:id="@+id/DOCETUP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/MobileTV"
+                    android:background="@drawable/edittext_background">
+
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="2"
+                    android:id="@+id/pptTV"
+                    android:layout_height="wrap_content"
+                    android:text="P/P/T"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent">
+
+                </TextView>
+                <EditText
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="2"
+                    android:id="@+id/pptETUP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/MobileTV"
+                    android:background="@drawable/edittext_background">
+
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="2"
+                    android:id="@+id/BranchTV"
+                    android:layout_height="wrap_content"
+                    android:text="Branch Name"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent">
+
+                </TextView>
+                <EditText
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="2"
+                    android:id="@+id/branchETUP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/MobileTV"
+                    android:background="@drawable/edittext_background">
+
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="2"
+                    android:id="@+id/finalamountTV"
+                    android:layout_height="wrap_content"
+                    android:text="Final Amount"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent">
+
+                </TextView>
+                <EditText
+                    android:layout_weight="2"
+                    android:id="@+id/finalamountETUP"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/MobileTV"
+                    android:background="@drawable/edittext_background">
+
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="2"
+                    android:id="@+id/premiumTV"
+                    android:layout_height="wrap_content"
+                    android:text="Premium Amount"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent">
+
+                </TextView>
+                <EditText
+                    android:layout_weight="2"
+                    android:id="@+id/premiumETUP"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/premiumTV"
+                    android:background="@drawable/edittext_background">
+
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="2"
+                    android:id="@+id/policyTV"
+                    android:layout_height="wrap_content"
+                    android:text="Policy Number"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent">
+
+                </TextView>
+                <EditText
+                    android:layout_weight="2"
+                    android:id="@+id/policyETUP"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/premiumTV"
+                    android:background="@drawable/edittext_background">
+
+                </EditText>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update">
+
+    </Button>
+
+</LinearLayout>
